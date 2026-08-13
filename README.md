@@ -1,2 +1,1 @@
-# neon-fruit-slash
-🍉 Hand Gesture Controlled Fruit Cutting Game | HTML, CSS, JavaScript &amp; MediaPipe ✋💣🔥
+https://panther20006.github.io/neon-fruit-slash/
