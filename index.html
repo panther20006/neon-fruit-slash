@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Cutter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+</head>
+
+<body>
+
+    <video id="camera" autoplay muted playsinline></video>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="hud">
+        <span>🍉 FRUIT CUTTER</span>
+        <span>Score: <b id="score">0</b></span>
+        <span>Lives: <b id="lives">❤️❤️❤️</b></span>
+    </div>
+
+    <div id="finger"></div>
+
+    <div id="startScreen">
+
+        <h1>🍉 FRUIT CUTTER</h1>
+
+        <p>
+            ✋ Show your hand<br>
+            ☝️ Move your index finger<br>
+            🍎 Cut fruits<br>
+            💣 Avoid bombs
+        </p>
+
+        <button id="startBtn">
+            START GAME
+        </button>
+
+        <div id="message"></div>
+
+    </div>
+
+    <div id="gameOver">
+
+        <h1>GAME OVER</h1>
+
+        <p>
+            Score:
+            <b id="finalScore">0</b>
+        </p>
+
+        <button id="restartBtn">
+            PLAY AGAIN
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

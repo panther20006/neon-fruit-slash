@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    background: #000;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================= CAMERA ================= */
+
+#camera {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transform: scaleX(-1);
+
+    z-index: 1;
+}
+
+
+/* ================= GAME CANVAS ================= */
+
+#gameCanvas {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* ================= HUD ================= */
+
+#hud {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 18px 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, .65),
+            transparent
+        );
+
+    z-index: 10;
+}
+
+
+/* ================= FINGER ================= */
+
+#finger {
+
+    position: fixed;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+
+    border: 3px solid #00ff66;
+
+    box-shadow:
+        0 0 10px #00ff66,
+        0 0 25px #00ff66;
+
+    transform:
+        translate(-50%, -50%);
+
+    display: none;
+
+    z-index: 20;
+
+    pointer-events: none;
+}
+
+
+/* ================= START ================= */
+
+#startScreen {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle,
+            #123d2b,
+            #020605 70%
+        );
+}
+
+#startScreen h1 {
+
+    color: #00ff66;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 20px #00ff66;
+}
+
+#startScreen p {
+
+    color: #ddd;
+
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+}
+
+button {
+
+    margin-top: 20px;
+
+    padding: 14px 32px;
+
+    border: 2px solid #00ff66;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #00ff66;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+
+    background: #00ff66;
+
+    color: #000;
+
+    box-shadow:
+        0 0 25px #00ff66;
+}
+
+
+/* ================= GAME OVER ================= */
+
+#gameOver {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 200;
+
+    display: none;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        rgba(0, 0, 0, .9);
+}
+
+#gameOver h1 {
+
+    color: #ff3158;
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+#gameOver p {
+
+    font-size: 20px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    #hud {
+
+        padding: 12px;
+
+        font-size: 12px;
+    }
+
+    #startScreen h1 {
+
+        font-size: 30px;
+    }
+}
