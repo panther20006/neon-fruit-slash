@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,4 +62,145 @@
     <script src="script.js"></script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neon Fruit Slash</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- MediaPipe Hands -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+</head>
+
+<body>
+
+    <!-- FULL SCREEN CAMERA -->
+    <div id="camera">
+        <video id="video" autoplay muted playsinline></video>
+
+        <div class="camera-label">
+            HAND TRACKING
+        </div>
+    </div>
+
+    <!-- CAMERA DARK OVERLAY -->
+    <div id="cameraOverlay"></div>
+
+
+    <!-- GAME -->
+    <div id="game">
+
+        <!-- HUD -->
+        <div id="hud">
+
+            <div class="logo">
+                NEON FRUIT SLASH
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <small>SCORE</small>
+                    <strong id="score">0</strong>
+                </div>
+
+                <div class="stat">
+                    <small>COMBO</small>
+                    <strong id="combo">x1</strong>
+                </div>
+
+                <div class="stat">
+                    <small>LIVES</small>
+                    <strong id="lives">❤️❤️❤️</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COMBO -->
+        <div id="comboText">
+            🔥 COMBO
+        </div>
+
+
+        <!-- HAND CURSOR -->
+        <div id="handCursor"></div>
+
+
+        <!-- STATUS -->
+        <div id="status">
+            CAMERA OFF
+        </div>
+
+    </div>
+
+
+    <!-- START SCREEN -->
+    <div id="startScreen">
+
+        <div class="start-box">
+
+            <div class="fruit-icon">
+                🍉
+            </div>
+
+            <h1>
+                FRUIT SLASH
+            </h1>
+
+            <p>
+                ✋ Show your hand<br>
+                ☝️ Use your index finger as a blade<br>
+                🍉 Cut the fruits<br>
+                💣 Avoid the bombs
+            </p>
+
+            <button id="startButton">
+                START GAME
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- GAME OVER -->
+    <div id="gameOver">
+
+        <div class="game-over-box">
+
+            <h2>
+                GAME OVER
+            </h2>
+
+            <p>
+                FINAL SCORE
+            </p>
+
+            <strong id="finalScore">
+                0
+            </strong>
+
+            <br>
+
+            <button id="restartButton">
+                PLAY AGAIN
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+>>>>>>> 24238b69477bd5b9a2436746b2d1934eee165dbb
 </html>
